@@ -83,12 +83,11 @@ button {
 }
 
 .game__item {
-
     background-repeat: no-repeat;
     height: 300px;
     border-radius: 18px;
     transition: all .3s;
-
+    position: relative;
 }
 
 .game__item--1 {
@@ -115,6 +114,7 @@ button {
     font-size: 24px;
     font-weight: 600;
     line-height: 32px;
-    padding: 236px 32px 32px 32px;
-
+    position: absolute;
+    bottom: 32px;
+    left: 32px;
 }
