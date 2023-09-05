@@ -69,3 +69,52 @@ button {
 .header__btn:hover {
     background-color: #EB443F;
 }
+
+.game {
+    padding-top: 128px;
+    padding-bottom: 128px;
+    background: #000915;
+}
+
+.game__box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(343px, 379px));
+    gap: 32px;
+}
+
+.game__item {
+
+    background-repeat: no-repeat;
+    height: 300px;
+    border-radius: 18px;
+    transition: all .3s;
+
+}
+
+.game__item--1 {
+    background-image: url(img/game1.jpg);
+}
+
+.game__item--2 {
+    background-image: url(img/game2.jpg);
+}
+
+.game__item--3 {
+    background-image: url(img/game3.jpg);
+}
+
+.game__item:hover {
+    border-radius: 16px;
+    border: 3px solid #44D2FF;
+    cursor: url(img/cursor.svg), pointer;
+}
+
+
+.game__heading {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    padding: 236px 32px 32px 32px;
+
+}
