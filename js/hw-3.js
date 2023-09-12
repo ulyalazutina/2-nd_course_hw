@@ -64,3 +64,40 @@ switch (monthNumber) {
         alert('такого месяца не существует')
         break;
 }
+
+
+//Задание 7
+let number = Number(prompt('Пожалуйста, введите любое число'));
+
+if (!isNaN(number)) {
+    if (number % 2 === 0) {
+        alert('Число четное');
+    } else {
+        alert('Число нечетное');
+    }
+} else {
+    alert('Вы ввели не число')
+}
+//Задание 8
+let clientOS = 1;
+
+if (clientOS === 1) {
+    console.log('Установите версию приложения для Android по ссылке');
+} else {
+    console.log('Установите версию приложения для iOS по ссылке');
+}
+
+//Задание 9
+let clientDeviceYear = 2015;
+clientOS = 0;
+
+if (clientOS == 0 && clientDeviceYear < 2015) {
+    console.log('Установите облегченную версию приложения для iOS по ссылке')
+} else if (clientOS == 0 && clientDeviceYear >= 2015) {
+    console.log('Установите версию приложения для iOS  по ссылке')
+}
+if (clientOS == 1 && clientDeviceYear < 2015) {
+    console.log('Установите облегченную версию приложения для Android по ссылке')
+} else if (clientOS == 1 && clientDeviceYear >= 2015) {
+    console.log('Установите версию приложения для Android  по ссылке')
+}
