@@ -78,8 +78,9 @@ button {
 
 .game__box {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(343px, 379px));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 379px));
     gap: 32px;
+    justify-content: center;
 }
 
 .game__item {
@@ -117,4 +118,48 @@ button {
     position: absolute;
     bottom: 32px;
     left: 32px;
+}
+
+@media(max-width:1200px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .title {
+        width: 663px;
+    }
+}
+
+@media(max-width:700px) {
+    .title {
+        font-size: 32px;
+        width: 343px;
+        text-align: center;
+        padding-top: 238px;
+        padding-bottom: 0;
+    }
+
+    .header__text {
+        font-size: 14px;
+        width: 343px;
+        text-align: center;
+        padding-bottom: 0;
+        line-height: 22px;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 33px;
+        height: 735px;
+    }
+
+}
+
+@media(max-width:340px) {
+    .title, .header__text {
+        width: 300px;
+    }
 }
