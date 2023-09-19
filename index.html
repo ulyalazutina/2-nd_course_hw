@@ -20,7 +20,7 @@
                     class="header__text header__text--bold"> поехали </span>и <span
                     class="header__text header__text--bold">
                     приступай </span></p>
-            <button type="button" class="header__btn">Поехали!</button>
+            <button type="button" class="btn header__btn">Поехали!</button>
         </header>
         <main class="main">
             <section class="game center">
@@ -36,8 +36,19 @@
                     </div>
                 </div>
             </section>
+            <section class="season center">
+                <div class="season__content">
+                    <h2 class="season__heading">Времена года!</h2>
+                    <p class="season__text">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к
+                        какому времени года он относится</p>
+                    <button onclick="getSeason();" type="button" class="btn season__btn">Играть!</button>
+                </div>
+                <div class="season__img-box">
+                    <img class="season__img" src="img/seasons.png" alt="season__img">
+                </div>
+            </section>
         </main>
-        <script src="js/hw-4.js"></script>
+        <script src="js/hw-5.js"></script>
     </body>
 
 </html>
