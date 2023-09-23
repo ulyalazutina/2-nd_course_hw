@@ -7,7 +7,7 @@ let getMin = (a, b) => {
     }
 }
 
-console.log(getMin(8, 4));
+// console.log(getMin(8, 4));
 
 //Задание 2
 const getEvenOrOdd = (number) => {
@@ -18,21 +18,21 @@ const getEvenOrOdd = (number) => {
     }
 }
 
-console.log(getEvenOrOdd(3));
+// console.log(getEvenOrOdd(3));
 
 //Задание 3.1
 let getPerfectSquare = (number) => {
     console.log(number ** 2);
 }
 
-getPerfectSquare(2);
+// getPerfectSquare(2);
 
 //Задание 3.2
 getPerfectSquare = (number) => {
     return number ** 2;
 }
 
-console.log(getPerfectSquare(3));
+// console.log(getPerfectSquare(3));
 
 //Задание 4
 let getGreeting = (age) => {
@@ -46,7 +46,7 @@ let getGreeting = (age) => {
     }
 }
 
-getGreeting();
+// getGreeting();
 
 //Задание 5
 let getMult = (a, b) => {
@@ -57,7 +57,7 @@ let getMult = (a, b) => {
     }
 }
 
-console.log(getMult(5, 4));
+// console.log(getMult(5, 4));
 
 //Задание 6
 let getNumberCubed = (number) => {
@@ -70,7 +70,7 @@ let getNumberCubed = (number) => {
     }
 }
 
-alert(getNumberCubed());
+// alert(getNumberCubed());
 
 //Задание 7
 function getArea() {
@@ -93,10 +93,10 @@ const circle2 = {
     getPerimeter: getPerimeter
 }
 
-console.log(`Площадь окружности равна ${circle1.getArea()}`);
-console.log(`Периметр окружности равен ${circle1.getPerimeter()}`);
-console.log(`Площадь окружности равна ${circle2.getArea()}`);
-console.log(`Периметр окружности равен ${circle2.getPerimeter()}`);
+// console.log(`Площадь окружности равна ${circle1.getArea()}`);
+// console.log(`Периметр окружности равен ${circle1.getPerimeter()}`);
+// console.log(`Площадь окружности равна ${circle2.getArea()}`);
+// console.log(`Периметр окружности равен ${circle2.getPerimeter()}`);
 
 //Задание по макету
 const getSeason = (numberMonth) => {
