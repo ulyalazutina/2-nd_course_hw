@@ -94,3 +94,27 @@ function filterPositive(array) {
 filterPositive([-1, 0, 5, -10, 56]); // => [-1, -10]
 filterPositive([-25, 25, 0, -1000, -2]); // => [-25, -1000, -2]
 
+//Задание 14
+const randomNumbers = [];
+
+for (let i = 0; i < 10; i++) {
+    let num = Math.floor((Math.random() * 10) + 1);
+    randomNumbers.push(num);
+}
+
+const evenNumbers = randomNumbers.filter(item => item % 2 === 0)
+console.log(randomNumbers)
+console.log(evenNumbers)
+
+//Задание 15
+const randomNum = [];
+
+for (let i = 0; i < 6; i++) {
+    let num = Math.floor((Math.random() * 10) + 1);
+    randomNum.push(num);
+}
+
+let arithmetic = randomNum.reduce((item, index) => item + index);
+arithmetic = arithmetic / 2;
+console.log(randomNum);
+console.log(arithmetic);
