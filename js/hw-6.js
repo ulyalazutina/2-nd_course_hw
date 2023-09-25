@@ -35,18 +35,19 @@ console.log(sortArr);
 
 //Задание 7
 const searchArray = [9, 8, 7, 6, 5];
-// let userNumber = Number(prompt('Введите число'));
-// if (isNaN(userNumber)) {
-//     alert('Вы ввели не число');
-// }
-// let a = 0;
-// for (let i = 0; i < searchArray.length; i++) {
-//     if (searchArray.includes(userNumber)) {
-//         alert('Угадал');
-//         break;
-//     }
-// }
+let userNumber = Number(prompt('Введите число'));
 
+if (!isNaN(userNumber)) {
+
+    if (searchArray.includes(userNumber)) {
+        alert('Угадал');
+    } else {
+        alert('Не угадал');
+    }
+    
+} else {
+    alert('Вы ввели не число');
+}
 
 //Задание 8
 const str = 'abcdef';
