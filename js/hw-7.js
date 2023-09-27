@@ -1,7 +1,7 @@
 //Задание 1
 let str = 'Преобразуйте строку js в верхний регистр JS.';
 str = str.toUpperCase();
-// console.log(str);
+console.log(str);
 
 //Задание 2
 const getArray = (array, stroke) => {
@@ -18,22 +18,22 @@ const getArray = (array, stroke) => {
     console.log(array);
     console.log(newArray)
 }
-// getArray(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко'); // ['кошка', 'комар']
-// getArray(['яблоко', 'груша', 'гриб', 'огурец'], 'гру'); // ['груша']
-// getArray(['Дом', 'Банк', 'Больница', 'Театр'], 'Кино'); // []
+getArray(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко'); // ['кошка', 'комар']
+getArray(['яблоко', 'груша', 'гриб', 'огурец'], 'гру'); // ['груша']
+getArray(['Дом', 'Банк', 'Больница', 'Театр'], 'Кино'); // []
 
 
 //Задание 3
 let num = 32.58884;
-// console.log('До меньшего целого - ' + Math.floor(num) +
-// ' До большего целого - ' + Math.ceil(num) +
-// ' До ближайшего целого - ' + Math.round(num));
+console.log('До меньшего целого - ' + Math.floor(num) +
+' До большего целого - ' + Math.ceil(num) +
+' До ближайшего целого - ' + Math.round(num));
 
 //Задание 4
 let numMin = Math.min(52, 53, 49, 77, 21, 32);
 let numMax = Math.max(52, 53, 49, 77, 21, 32);
 
-// console.log(numMin, numMax);
+console.log(numMin, numMax);
 
 //Задание 5
 const getRandom = () => {
@@ -41,7 +41,7 @@ const getRandom = () => {
     console.log(numRandom)
 }
 
-// getRandom();
+getRandom();
 
 //Задание 6
 const getRandomArray = (maxValue) => {
@@ -54,7 +54,7 @@ const getRandomArray = (maxValue) => {
     console.log(a);
 }
 
-// getRandomArray(7);
+getRandomArray(7);
 
 //Задание 7
 const getRandomNum = (minValue, maxValue) => {
@@ -62,17 +62,17 @@ const getRandomNum = (minValue, maxValue) => {
     console.log(numRandom)
 }
 
-// getRandomNum(1, 10);
+getRandomNum(1, 10);
 
 //Задание 8 
 let currentDate = new Date();
 let anotherFormat = currentDate.toLocaleString();
-// console.log(anotherFormat);
+console.log(anotherFormat);
 
 //Задание 9
 currentDate.setDate(currentDate.getDate() + 73);
 let newFormat = currentDate.toLocaleDateString();
-// console.log(newFormat);
+console.log(newFormat);
 
 //Задание 10
 const getDate = (userDate) => {
@@ -101,7 +101,26 @@ const getDate = (userDate) => {
     console.log(date)
 }
 
-// getDate("8/1/2023, 5:55:3");
+getDate("8/1/2023, 5:55:3");
 
+const rememberWords = () => {
+    let arr = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+    arr = arr.sort(() => Math.random() - 0.5);
+    alert(arr);
+    let answerOne = prompt("Чему равнялся первый элемент массива?").toLowerCase();
+    let answerTwo = prompt("Чему равнялся последний элемент массива?").toLowerCase();
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[0].toLowerCase() == answerOne && arr.at(-1).toLowerCase() == answerTwo) {
+            alert('Поздравляю! Вы угадали оба элемента');
+            break;
+        } else if ((arr[0].toLowerCase() == answerOne && arr.at(-1).toLowerCase() !== answerTwo) || (arr[0].toLowerCase() !== answerOne && arr.at(-1).toLowerCase() == answerTwo)) {
+            alert('Вы были близки к победе!');
+            break;
+        } else if (arr[0].toLowerCase() !== answerOne && arr.at(-1).toLowerCase() !== answerTwo) {
+            alert('Вы ответили неверно');
+            break;
+        }
+    }
+}
 
 

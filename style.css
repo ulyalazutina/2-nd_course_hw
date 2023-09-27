@@ -68,6 +68,7 @@ body {
     padding: 13px 72px;
     transition: background-color .3s;
     width: 234px;
+    height: 48px;
 }
 
 .btn:hover {
@@ -130,19 +131,19 @@ body {
     padding-bottom: 234px;
 }
 
-.season__content {
+.content {
     display: grid;
     gap: 32px;
     max-width: 584px;
 }
 
-.season__heading {
+.heading {
     color: #FFF;
     font-size: 48px;
     font-weight: 700;
 }
 
-.season__text {
+.text {
     color: #FFF;
     font-size: 18px;
     font-weight: 300;
@@ -153,13 +154,21 @@ body {
     height: 48px;
 }
 
-.season__img-box {
+.season__img-box, .remember__img-box {
     max-width: 485px;
 }
 
-.season__img {
+.season__img, .remember__img {
     width: 100%;
 }
+
+.remember {
+    display: flex;
+    gap: 135px;
+    padding-top: 239px;
+    padding-bottom: 239px;
+}
+
 
 @media(max-width:1220px) {
     .center {
@@ -171,7 +180,7 @@ body {
         width: 663px;
     }
 
-    .season {
+    .season, .remember {
         flex-direction: column;
         align-items: center;
         text-align: center;
@@ -181,6 +190,14 @@ body {
     }
 
     .season__btn {
+        justify-self: center;
+    }
+
+    .remember {
+        flex-direction: column-reverse;
+    }
+
+    .remember__btn {
         justify-self: center;
     }
 }
@@ -210,11 +227,11 @@ body {
         height: 735px;
     }
 
-    .season__heading {
+    .season__heading,.remember__heading {
         font-size: 32px;
     }
 
-    .season__text {
+    .season__text,.remember__text {
         font-size: 14px;
     }
 
