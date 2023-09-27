@@ -18,8 +18,12 @@ console.log(array.join(' '));
 
 //Задание 4
 let multidimensionalArray = [];
-for (let i = 1; i <= 3; i++) {
-    multidimensionalArray.push([1, 1])
+for (let i = 0; i < 3; i++) {
+	multidimensionalArray[i] = []; // создаем подмассив
+	
+	for (let j = 0; j < 3; j++) {
+		multidimensionalArray[i].push(1); // заполняем подмассив числами
+	}
 }
 console.log(multidimensionalArray);
 
