@@ -22,14 +22,19 @@ function isPositive(item) {
 }
 
 function isMale(item) {
-    return item.gender == 'male';
+    return item.gender === 'male';
 }
 
 function filter(arr, instuction) {
-    const ouptut = arr.filter(instuction)
-    return ouptut;
-}
+    const output = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (instuction(arr[i])) {
+            output.push(arr[i]);
+        } 
+    }
+    return output;
 
+}
 console.log(filter([3, -4, 1, 9], isPositive)); // Должен выводить [3, 1, 9]
 
 
@@ -44,7 +49,6 @@ console.log(filter(peoples, isMale)); // Должен выводить [{name: '
 
 //Задание 3
 const timer = (deadline) => {
-    let time = deadline;
 
     const interval = setInterval(() => {
         let date = new Date();
@@ -67,7 +71,7 @@ function delayForSecond(callback) {
 }
 
 delayForSecond(function () {
-    console.log('Привет, Глеб!');
+console.log('Привет, Глеб!');
 })
 
 //Задание 5
@@ -84,4 +88,4 @@ function sayHi(name) {
 }
 
 
-delayForSecond(() => sayHi('Глеб')); 
+delayForSecond(() => sayHi('Глеб'));  
