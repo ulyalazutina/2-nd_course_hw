@@ -1,7 +1,7 @@
 //Задание 1
 let str = 'Преобразуйте строку js в верхний регистр JS.';
 str = str.toUpperCase();
-console.log(str);
+// console.log(str);
 
 //Задание 2
 const getArray = (array, stroke) => {
@@ -17,22 +17,22 @@ const getArray = (array, stroke) => {
 
     return newArray;
 }
-console.log(getArray(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко')); // ['кошка', 'комар']
-console.log(getArray(['яблоко', 'груша', 'гриб', 'огурец'], 'гру')); // ['груша']
-console.log(getArray(['Дом', 'Банк', 'Больница', 'Театр'], 'Кино')); // []
+// console.log(getArray(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко')); // ['кошка', 'комар']
+// console.log(getArray(['яблоко', 'груша', 'гриб', 'огурец'], 'гру')); // ['груша']
+// console.log(getArray(['Дом', 'Банк', 'Больница', 'Театр'], 'Кино')); // []
 
 
 //Задание 3
 const num = 32.58884;
-console.log('До меньшего целого - ' + Math.floor(num) +
-    ' До большего целого - ' + Math.ceil(num) +
-    ' До ближайшего целого - ' + Math.round(num));
+// console.log('До меньшего целого - ' + Math.floor(num) +
+    // ' До большего целого - ' + Math.ceil(num) +
+    // ' До ближайшего целого - ' + Math.round(num));
 
 //Задание 4
 const numMin = Math.min(52, 53, 49, 77, 21, 32);
 const numMax = Math.max(52, 53, 49, 77, 21, 32);
 
-console.log(numMin, numMax);
+// console.log(numMin, numMax);
 
 //Задание 5
 const getRandom = () => {
@@ -40,7 +40,7 @@ const getRandom = () => {
     console.log(numRandom)
 }
 
-getRandom();
+// getRandom();
 
 //Задание 6
 const getRandomArray = (maxValue) => {
@@ -53,7 +53,7 @@ const getRandomArray = (maxValue) => {
     return a;
 }
 
-console.log(getRandomArray(7));
+// console.log(getRandomArray(7));
 
 //Задание 7
 const getRandomNum = (minValue, maxValue) => {
@@ -61,17 +61,17 @@ const getRandomNum = (minValue, maxValue) => {
     return numRandom;
 }
 
-console.log(getRandomNum(1, 10));
+// console.log(getRandomNum(1, 10));
 
 //Задание 8 
 const currentDate = new Date();
 const anotherFormat = currentDate.toLocaleString();
-console.log(anotherFormat);
+// console.log(anotherFormat);
 
 //Задание 9
 currentDate.setDate(currentDate.getDate() + 73);
 const newFormat = currentDate.toLocaleDateString();
-console.log(newFormat);
+// console.log(newFormat);
 
 //Задание 10
 const getDate = (userDate) => {
@@ -100,7 +100,7 @@ const getDate = (userDate) => {
     return date;
 }
 
-console.log(getDate("8/1/2023, 5:55:3"));
+// console.log(getDate("8/1/2023, 5:55:3"));
 
 const rememberWords = () => {
     let arr = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
